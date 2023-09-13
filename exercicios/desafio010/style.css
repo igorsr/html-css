@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root { /*Criação de Variaveis*/
+    --cor0: #c5ebd6;
+    --cor01: #2fa866;
+    --cor02: #1a5c37;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android';
+
+}
+* { /*Seletor para ajustar de forma macro*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrão);
+}
+
+a.externo::after { /*Pseudo-Elements, permite inserir uma palavra chave antes e depois do elemento*/
+    content: '\00A0\1F517'; /*Incluindo um espaçamento com emoji*/
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+    font-weight: normal;
+
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+}
+
+nav {
+    background-color: var(--cor02);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.178);
+}
+nav > a {
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none; /*Sublinhado removido*/
+    font-weight: bold; /*Fonte em negrito*/
+    transition-duration: 0.5s; /*Transição de um botão para o outro*/
+}
+
+nav > a:hover { 
+    background-color: var(--cor01);
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103); /*Adicionando sombra*/
+    border-bottom-left-radius: 10px; /*Borda a esquerda*/
+    border-top-right-radius:  10px; /*Borda a direita*/
+
+
+}
+
+main h1 {
+    color: var(--cor02);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: black;
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-indent: 8px; /*Espaço entre os paragrafos*/
+    font-weight: normal;
+
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Espaço entre os paragrafos*/
+    font-size: 1em;
+    line-height: 2em; /*Altura da linha*/
+}
+
+main strong {
+    color: var(--cor02);
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor0);
+    background-color: var(--cor02);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.212);
+}
+
+aside > h3 {
+    background-color: var(--cor01);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside > ul {
+    list-style-position: inside; /*Posição da lista*/
+    list-style-type: '\1F5F8\00A0\00A0'; /*Estilo da lista com emoji + espaçamento*/
+    columns: 2; /*Número de colunas*/
+
+}
+
+footer {
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none; /*Sem decoração no texto*/
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+div .video {
+background-color: var(--cor01);
+margin: 0px -20px 30px -20px;
+padding: 20px;
+padding-bottom: 70%;
+position: relative;
+}
+
+div.video > iframe {
+position: relative;
+top: 5%;
+left: 5%;
+width: 95%;
+
+}

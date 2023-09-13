@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div {
+    margin: auto;
+    border: auto;
+    border-style: dashed;
+    border-color: blueviolet;
+    padding: blue;
+    outline: green;
+}
+
+button {
+    border-bottom-color: blueviolet;
+    width: auto;
+    height: auto;
+}

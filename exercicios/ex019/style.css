@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+h2 {
+    color:chartreuse
+}
+
+h1#principal {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.basico{
+    color: blue;
+}
+
+.abc{
+    color: red;
+}
